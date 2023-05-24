@@ -1,7 +1,7 @@
 {
 	"name": "@iro/icon",
 	"version": "1.0.1",
-	"description": "",
+	"description": "Icon components made for Svelte.",
 	"main": "./dist/index.js",
 	"keywords": [
 		"svelte",
