@@ -1,14 +1,18 @@
 <script lang="ts">
   import type {HTMLAttributes} from 'svelte/elements'
   export let color = '#ccc'
-  let cls: HTMLAttributes<SVGAElement>['class'] = undefined
-  export {cls as class}
+
   export let onClick: (() => void) | undefined = undefined
   export let width = 24
   export let height = width
+  export let ref: HTMLOrSVGElement | undefined = undefined
+
+  let cls: HTMLAttributes<SVGAElement>['class'] = undefined
+  export {cls as class}
 </script>
 
 <svg
+  bind:this={ref}
   on:click={onClick}
   stroke={color}
   class={cls}
