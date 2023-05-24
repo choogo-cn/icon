@@ -1,7 +1,6 @@
 <script lang="ts">
   import type {HTMLAttributes} from 'svelte/elements'
-  export let color = '#ccc'
-
+  export let color: string | undefined = undefined
   export let onClick: (() => void) | undefined = undefined
   export let width = 24
   export let height = width
@@ -14,7 +13,7 @@
 <svg
   bind:this={ref}
   on:click={onClick}
-  stroke={color}
+  style:stroke={color}
   class={cls}
   width={width}
   height={height}
