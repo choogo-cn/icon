@@ -4,7 +4,7 @@
     RepeatOnce, PlayerPause, PlayerPlay,
     PlayerSkipBack, PlayerSkipForward, Playlist,
     Alarm, Blub, ChevronRight, Crown, DatabaseStar, Eraser,
-    Lock, LockOpen
+    Lock, LockOpen, Plus
   } from '$lib'
 </script>
 
@@ -27,6 +27,7 @@
   <Eraser color="red"/>
   <Lock color="red"/>
   <LockOpen color="red"/>
+  <Plus color="red"/>
 </section>
 
 <style lang="scss">
