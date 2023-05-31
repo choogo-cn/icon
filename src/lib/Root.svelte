@@ -5,6 +5,7 @@
   export let width = 24
   export let height = width
   export let ref: HTMLOrSVGElement | undefined = undefined
+  export let viewBox = '0 0 24 24'
 
   let cls: HTMLAttributes<SVGAElement>['class'] = undefined
   export {cls as class}
@@ -17,7 +18,7 @@
   class={cls}
   width={width}
   height={height}
-  viewBox="0 0 24 24"
+  viewBox={viewBox}
   stroke-width="2"
   fill="none"
   stroke-linecap="round"
