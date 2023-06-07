@@ -10,7 +10,7 @@
 
 <section class="grid">
   <Pen color="red"/>
-  <Pencil color="red"/>
+  <Pencil color="red" />
   <ArrowsShuffle color="red"/>
   <Repeat color="red"/>
   <RepeatOnce color="red"/>
@@ -28,7 +28,7 @@
   <Lock color="red"/>
   <LockOpen color="red"/>
   <Plus color="red"/>
-  <Google/>
+  <Google {...{'aria-label': 'google', 'role': 'button', 'tabindex': 0}}/>
 </section>
 
 <style lang="scss">
