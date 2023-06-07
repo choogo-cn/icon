@@ -13,6 +13,8 @@
 <svg
   bind:this={ref}
   on:click={onClick}
+  role="button"
+  tabindex={0}
   style:stroke={color}
   class={cls}
   width={width}
