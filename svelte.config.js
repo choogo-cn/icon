@@ -7,11 +7,11 @@ const config = {
 	// for more information about preprocessors
 	preprocess: vitePreprocess(),
 
-	onwarn: (warning, handle) => {
-    // 屏蔽 a11y 的警告
-    if (warning.code.startsWith('a11y')) return
-    handle(warning)
-  },
+	// onwarn: (warning, handle) => {
+  //   // 屏蔽 a11y 的警告
+  //   if (warning.code.startsWith('a11y')) return
+  //   handle(warning)
+  // },
 
 	kit: {
 		// adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
