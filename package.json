@@ -38,6 +38,6 @@
 	"type": "module",
 	"license": "MIT",
 	"peerDependencies": {
-		"svelte": "^3.59.1"
+		"svelte": "^4.0.5"
 	}
 }
