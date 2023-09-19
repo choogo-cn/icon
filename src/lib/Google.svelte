@@ -3,12 +3,14 @@
   export let color: string | undefined = undefined
   export let width = 24
   export let height = width
+  export let target: HTMLElement | SVGElement | null = null
 
   let cls: HTMLAttributes<SVGAElement>['class'] = undefined
   export {cls as class}
 </script>
 
 <svg
+  bind:this={target}
   style:stroke={color}
   class={cls}
   width={width}
